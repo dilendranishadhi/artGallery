@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://java.sun.com/xml/ns/javaee"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+		id="WebApp_ID" version="2.5">
+
+		<display-name>Art_Gallery_System</display-name>
+		<welcome-file-list>
+			<welcome-file>index.html</welcome-file>
+			<welcome-file>index.htm</welcome-file>
+			<welcome-file>index.jsp</welcome-file>
+			<welcome-file>default.html</welcome-file>
+			<welcome-file>default.htm</welcome-file>
+			<welcome-file>default.jsp</welcome-file>
+		</welcome-file-list>
+
+		<servlet>
+			<description></description>
+			<display-name>SignupServlet</display-name>
+			<servlet-name>SignupServlet</servlet-name>
+			<servlet-class>art_Gallery.SignupServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>SignupServlet</servlet-name>
+			<url-pattern>/SignupServlet</url-pattern>
+		</servlet-mapping>
+
+
+		<servlet>
+			<description></description>
+			<display-name>Customer</display-name>
+			<servlet-name>Customer</servlet-name>
+			<servlet-class>art_Gallery.Customer</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>Customer</servlet-name>
+			<url-pattern>/Customer</url-pattern>
+		</servlet-mapping>
+
+		<servlet>
+			<description></description>
+			<display-name>Signupservlet1</display-name>
+			<servlet-name>Signupservlet1</servlet-name>
+			<servlet-class>art_Gallery.Signupservlet1</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>Signupservlet1</servlet-name>
+			<url-pattern>/Signupservlet1</url-pattern>
+		</servlet-mapping>
+
+
+
+
+
+
+
+
+
+		<!-- dilendra start request -->
+		<servlet>
+			<servlet-name>insertRequest</servlet-name>
+			<servlet-class>art_Gallery.RequestServlet</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>insertRequest</servlet-name>
+			<url-pattern>/insertRequest</url-pattern>
+		</servlet-mapping>
+
+
+
+
+		<servlet>
+			<servlet-name>requestLogin</servlet-name>
+			<servlet-class>art_Gallery.requestLoginServlet</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>requestLogin</servlet-name>
+			<url-pattern>/requestLog</url-pattern>
+		</servlet-mapping>
+
+		<servlet>
+			<servlet-name>requestCusLogin</servlet-name>
+			<servlet-class>art_Gallery.requestCusLogin</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>requestCusLogin</servlet-name>
+			<url-pattern>/requestCusLog</url-pattern>
+		</servlet-mapping>
+
+		<servlet>
+			<servlet-name>updateRequest</servlet-name>
+			<servlet-class>art_Gallery.UpdateRequestServlet</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>updateRequest</servlet-name>
+			<url-pattern>/updateRequest</url-pattern>
+		</servlet-mapping>
+
+		<servlet>
+			<servlet-name>deleteRequest</servlet-name>
+			<servlet-class>art_Gallery.DeleteRequestServlet</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>deleteRequest</servlet-name>
+			<url-pattern>/deleteRequest</url-pattern>
+		</servlet-mapping>
+
+		<servlet-mapping>
+			<servlet-name>AddCusomer</servlet-name>
+			<url-pattern>/AddCustomer</url-pattern>
+		</servlet-mapping>
+
+	</web-app>
+</element>
